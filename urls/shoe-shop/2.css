@@ -1,0 +1,68 @@
+body {
+    background-color: palevioletred;
+}
+
+.popup {
+    position: fixed;
+    z-index: 1;
+    background-color: purple;
+    display: none;
+    float: left;
+    width: 80px;
+    height: 80px;
+    
+}
+
+@keyframes shoe{
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(25deg);
+        
+    }
+
+    50% {
+        transform: rotate(50deg);
+    }
+
+    75% {
+        transform: rotate(75deg);
+    }
+
+    100% {
+        transform: rotate(90deg);
+    }
+}
+
+
+table {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(243, 235, 235, 15);
+    text-align: center;
+    margin: 0 auto;
+    font-size: medium;
+    border-collapse: collapse;
+}
+table:hover {
+ color: rgb(211, 46, 101);
+}
+
+th {
+    width: 100px;
+    height: 60px;
+    padding: 10px;
+    border-bottom: 2px solid  rgb(158, 158, 158);
+    text-align: left;
+}
+
+td {
+    border-bottom: 2px solid  rgb(158, 158, 158);
+    height: 100px;
+    width: 100px;
+}
+
+img:hover {
+    animation: shoe 0.5s linear infinite alternate;
+}
